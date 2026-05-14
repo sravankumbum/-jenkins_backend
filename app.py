@@ -27,7 +27,7 @@ def helloworld():
 def process():
 	print("Received data:", request.json)
 	data = request.json
-	return jsonify({"success": True, "message": f"Hello {data['name']}! Data received successfully."})
+	return jsonify({"success": True, "message": f"Hello {data['name']}! Data received successfully,with no errors."})
 
 if __name__ == '__main__':
 	app.run(host='0.0.0.0', port=5000)
